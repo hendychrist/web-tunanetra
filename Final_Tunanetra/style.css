@@ -1,0 +1,253 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #ffe259;
+    background: var(--mango-gradient);
+}
+
+/*  Vatiabel  */
+:root{
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --mango-gradient: linear-gradient(to right, #ffa751, #ffe259);
+    --text-color: #f7f9f9;
+    --Calibri: "Calibri", cursive;
+    --Lobster:"Lobster",cursive;
+    --primary-shadow: 3px 4px 7px rgba(27,27,27,0.534);
+    --border-color: rgb(0, 0, 0);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    max-height: 610px;
+}
+
+.container .panel{
+    padding-top: 280px;
+    width: 80%;
+    height:auto;
+    box-shadow: var(--primary-gradient);
+}
+
+.col{
+    position: relative;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+}
+
+.row2{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 140%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+    margin-top: 100px;
+}
+         /* Start Col Judul || Sebela Kiri  */
+
+.judul{
+    background: url("img/Wave5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 610px;
+    border-radius: 20px;
+}
+
+.judul2{
+    background: url("img/Wavee.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 1500px;
+    border-radius: 20px;
+}
+
+
+.samping h4, .samping2 h4{
+    text-align: left;
+    padding: 0 1rem;
+    color: whitesmoke;
+    font-family: var(--Calibri);
+    font-weight: bold;
+    font-size: large;
+}
+
+.judul .samping, .judul2 .samping2{
+    display: flex;
+}
+
+.samping img, .samping2 img{
+    padding-top: 23px;
+    padding-left: 20px;
+    width: 40px;
+    height: 25px;
+}
+
+.slide-container{
+    width: 100%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+   margin-top: -50px;
+}
+
+.slide-container img{
+        max-width: 100%;
+        max-height: 100%;
+}
+
+.slide-container2 img{
+    max-width: 75%;
+    max-height: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+          /*  End Col Judul || Sebela Kiri  */
+
+    /*  Start Kolom kanan */
+.btn{
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: var(--primary-gradient);
+    box-shadow: var(--primary-shadow);
+    cursor: pointer;
+}
+
+.btn-signup, .btn-register{
+    width: 150px;
+    height: 50px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+.btn-login , .btn-submit{
+    margin-left: 70px;
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+}
+
+.btn-register a, .btn-login a, .btn-submit a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: var(--Calibri);
+    text-decoration: none;
+}
+
+.titles{
+    margin-bottom: 2.2rem;
+}
+
+.titles2{
+    margin-top: -110px;
+}
+
+form{
+    height: 55%;
+    max-height: 280px;
+    margin-top: 5.5rem;
+}
+
+form h3, form h6{
+    font-family: var(--Calibri);
+    padding: 0;
+    margin: 0;
+    padding-left: 3rem;
+}
+
+form h3{
+    font-size: 50px;
+}
+
+form h6{
+    padding-left: 12.5rem;
+    font-size: 20px;
+}
+
+form .form-group{
+    text-align: left;
+    border: 1px solid var(--border-color);
+    margin-top: 50px;
+    margin-right: 2rem;
+    border-radius: 15px;
+    width: 80%;
+    height: 50px;
+}
+
+.form-input{
+    padding: .5rem 1rem;
+    background: transparent;
+    border: none;
+    font-family: var(--Calibri);
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.input-icon img{
+    width: auto;
+    height: 40px;
+    margin-left: 350px;
+    margin-top: -42px;
+}
+
+form input:focus{
+    outline:none;
+}
+
+form .input-icon{
+    display: inline;
+    color:var(--border-color);
+    align-items: right;
+ 
+}
+
+.jenis{ 
+    display: flex;
+    position: relative;
+}
+
+.jenis h1{
+    position: absolute;
+    font-size: 25px;
+    font-family: var(--Calibri);
+    text-decoration: none;
+    padding-left: 10px;
+    top: -8px;
+}
+
+
+
+.jenis input, .jenis label{
+   margin-top: 20px;
+}
+
+.m{
+    margin-left: 150px;  
+}
+
+.jenis h2{
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.center-p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: normal;
+    color: red;
+
+    position: absolute;
+}

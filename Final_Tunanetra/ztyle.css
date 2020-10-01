@@ -1,0 +1,781 @@
+html,body{
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+}
+
+/*  Home Page  */
+
+.background{
+    background-image: url("img/banner.jpg");
+    background-repeat: none;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*  Navbar */
+
+/* End Navbar && Dropdown */
+
+.slide{
+    width: auto;
+    height: 800px;
+}
+
+.slide h1{
+    color: rgb(23, 46, 255);
+    font-size: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    margin: 90px 0px 0px 250px;
+}
+
+.slide h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:  black;
+    font-weight: normal;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-left: 250px;
+}
+                                /* Start Visi */
+.content {
+    width: 1950px;
+    height: 300px;
+    background-color: white;
+}
+
+.content div{ /* BOX */
+    background-color:#e5e5e5;
+    width: 1000px;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 450px;
+    box-shadow: 3px 3px 4px 3px #ccc;
+    display: flex;
+}
+
+.text1, .text2{
+    margin-left: 50px;
+}
+
+.text1 h1 , .text2 h1{
+    font-family: Montserrat;
+    font-size: 25px;
+}
+
+.text1 h3, .text2 h3{
+    width: 500px;
+    height: 120px;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.satu{
+    margin-top: 75px;
+}
+
+                                          /* End Visi*/
+
+                                          /* START Misi*/
+
+.content2{
+    background-color:white;
+    width: 1900px;
+    height: 200px;
+}
+
+.content2 img{
+    width: 80%;
+    height: auto;
+    margin-left: 200px;
+    margin-top: -30px;
+}
+
+.content3{
+    width: 1000px;
+    height: 700px;
+    background-color: white;
+}
+
+.content3 div{
+    background-color: white;
+    margin-left: 450px;
+    width: 100%;
+    height: 93%;
+}
+
+ .gambar1 img{
+    width: 430px;
+    height: 300px;
+    float: left;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid #fff;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow : 10px 10px 5px #ccc;
+    -khtml-box-shadow : 10px 10px 5px #ccc;
+}
+
+.gambar2 img{
+    width: 430px;
+    height: 300px;
+    float: right;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid #fff;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow : 10px 10px 5px #ccc;
+    -khtml-box-shadow : 10px 10px 5px #ccc;
+}                                           
+
+    .overlay{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0);
+        z-index: 9999;
+        transition: .8s;
+        opacity: 100%;
+    }
+
+    .overlay:target{
+        width: auto;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .overlay img{
+        width: 920px;
+        height: 600px;
+        max-height: 100%;
+        margin-left: 500px;
+        margin-top: 150px;
+    }
+
+    .overlay:target img{
+        animation: zoomDanFade 1s;
+    }
+
+    @keyframes zoomDanFade {
+        0%{
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .overlay .close{
+        position: absolute;
+        top: 120px;
+        right: 480px;
+        font-weight: bolder;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        border: 1px solid white;
+    }
+
+    .gambar2 .overlay img{
+        margin-right: 500px;
+    }
+
+    .content2 p{
+        margin: -30px;
+        color: red;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+                  /* End Misi */
+
+                 /* START Event */
+  .artikel{
+    width: 1950px;
+    height: 550px;
+    background-color:#FFFFFF;
+  }                                           
+
+  .tengah{
+    background-color: #FFFFFF;
+    margin-left: 450px;
+    width: 1000px;
+    height: 460px;
+    margin-top: 40px;
+  }
+
+.tengah1{
+    background-color: #FFFFFF;
+   
+    width: 1000px;
+    height: auto;
+    margin-top: 40px;
+    margin:auto;
+  }
+                       /* End Event */
+
+                        /* Start Kata - Kata sebela kiri [Artikel] */
+
+    .kotak1,.kotak2{
+        background-color:rgb(238, 238, 238);
+        width: 1000px;
+        height: 190px;
+        margin: 20px 20px 20px 0px;
+        box-shadow: 3px 3px 4px 3px #ccc;
+        display: flex;
+        border-radius: 15px;
+    }
+
+    .kotak1 div, .kotak2 div{
+        border-radius: 15px;
+        width: 250px;
+        height: 190px;
+        text-align: center;
+    }
+
+    .kotak1 a img , .kotak2 a img{
+        padding-top: 30px;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 15px;
+    }
+
+                             /*  End Kata - Kata sebela kiri [Artikel]*/
+   
+    .kotak1 span, .kotak2 span{
+        height: 170px;
+        width: 800px;
+        font-size: 12px;
+        font-family: Montserrat;
+        padding: 6px 10px 10px 10px;
+    }
+
+    .kotak1 span h2, .kotak2 span h2{
+        font-size: 14px;
+        font-family: Montserrat;
+    }
+
+                    /*  Footer  */
+    .footer{
+        padding: 10px;
+        width: 2000px;
+        height: 300px;
+        margin-top: -30px;
+        color: white;
+        background-color: rgb(36, 36, 36);
+      
+        text-align: center;
+    }
+
+    .footer h3{
+        margin-right: 50px;
+        font-family:Montserrat ;
+    }
+
+    .footer h1{
+        margin-right: 53px;
+    }
+
+    /*  Footer Forum  */
+    .footer1{
+        padding: 10px;
+        width: 2000px;
+        height: 300px;
+        margin-top: auto;
+        color: white;
+        background-color: rgb(36, 36, 36);
+      
+        text-align: center;
+    }
+
+    .footer1 h3{
+        margin-right: 50px;
+        font-family:Montserrat ;
+    }
+
+    .footer1 h1{
+        margin-right: 53px;
+    }
+
+
+/*  Feedback HTML */
+.belakang{
+     background: url("img/bgFeedback.jpg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -70px;
+}
+
+.negah{
+    background-color: palevioletred;
+    text-align: center;
+}
+
+.fdback h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: normal;
+}
+
+.fdback hr{
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.suka span{
+    display: flex;
+    text-align: center;
+}
+
+.suka , .luar{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.ngiri{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.luar{
+    justify-content: center;
+    display: flex;
+}
+
+.ngiri{
+    text-align: center;
+
+}
+
+            /* Text Label Input */
+.dalem2{
+    padding-left: 700px;
+}
+
+.dalem1 label{
+    margin-left: -250px;
+}
+
+.dalem3 label{
+    margin-left: -330px;
+}
+
+.dalem2 label{
+    margin-left: -330px;
+}
+
+.ngiri div label{
+    margin-left: -1400px ;
+}
+
+                /* End Text */
+
+.bulat{
+    text-align: left;
+    border: 1px solid  rgba(0,0,0,0.329);
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 15px;
+    width: 400px;
+    height: 50px;
+    background-color: whitesmoke;
+}
+
+.bulet{
+    text-align: left;
+    border: 1px solid  rgba(0,0,0,0.329);
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 15px;
+    margin-left: 170px;
+    width: 1550px;
+    height: 300px;
+    background-color: whitesmoke;
+}
+
+.namap{
+    padding: .5rem 2rem;
+    background: transparent;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.bigMap{
+    padding: .5rem 2rem;
+    background: transparent;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    overflow: hidden;
+    width: 1500px;
+    height: 250px;
+    text-decoration: none;
+}
+
+/* Missing underline */
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+/* Button Submit  */
+.tombol{
+    margin-left: -10px;
+    margin-top: 30px;
+    width: 1550px;
+    height: 50px;
+
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 15px;
+    background:  linear-gradient(to right, #ab93ff, #1ba4ff);
+    box-shadow: 3px 4px 7px rgba(27,27,27,0.534);
+    cursor: pointer;
+}
+
+.tombol a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+ 
+}
+
+/* End Button Submit  */
+
+.antara{
+   margin-top: -50px;
+    width: auto;
+    height: 140px;
+}
+
+
+/*  Rating Html  */
+
+.kotak{
+    justify-content: center;
+    text-align: center;
+}
+
+.kotak h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 55px;
+    font-weight: normal;
+    color: whitesmoke;
+    padding-top: 50px;
+}
+
+.kotak hr{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.rating{
+    width: auto;
+    height: auto;
+   
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+
+    /* Rotate Rating */
+    direction: rtl;
+}
+
+.rating label{
+    display: inline-block;
+    width: 130px;
+    position: relative;
+    cursor: pointer;
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label:before{
+    content: "\2605";
+    position: absolute;
+    font-size: 120px;
+    display: inline-block;
+    top:0;
+    left:0;
+}
+
+.rating label:after{
+    content: "\2605";
+    position: absolute;
+    font-size: 120px;
+    display: inline-block;
+    top:0;
+    left:0;
+    color:yellow;
+    opacity: 0;
+} 
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:hover ~ label:after
+{
+    opacity: 1;
+}
+
+.kotak h3{
+    text-align: center;
+    margin-top: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+    font-size:35px;
+}
+
+.coba{
+    width: auto;
+    height: 200px;
+}
+
+/* Forum HTML */
+
+.fBelakang{
+margin:0;
+padding:0;
+   width: 100%;
+   height: 1400px;
+   background-color: rgb(238, 238, 238);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.kontainer{
+    background-color: rgb(238, 238, 238);
+    width: 1500px;
+    height: 100%;
+    margin: auto;
+}
+
+.rows{
+    width: 1000px; 
+    height: auto;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+.rows a{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkcyan;
+}
+
+.rows img{
+    width: 30px;
+    height: 20px;
+    padding-top:10px ;
+}
+
+.form{
+    margin-top: 15px;
+}
+
+.kategori{
+    margin-top: 50px;
+}
+
+.kategori h1{
+    padding-left: 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkslategray;
+    font-weight: normal;
+}
+
+.kategori a{
+    text-align: center;
+    width: 130px;
+    height: 25px;
+    background: linear-gradient(to right, #00e1ff, #a318ff);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 3px 4px 7px rgba(27,27,27,0.534);
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 15px;
+}
+
+/*  Start table */
+
+.baris{
+    padding: 10px 10px 10px 10px;
+    width: 1000px; 
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: left;    
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.baris table{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+.formTable{
+    width: 100%;
+    height: auto;
+}
+
+.formTable th ,td{
+    padding: 5px;
+}
+
+.formTable tr{
+    border: 2px solid #f2f2f2;
+}
+
+.formTable a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: darkgray;
+    text-decoration: none;
+   
+}
+
+a:hover{
+    color: #562e72;
+    font-weight: 500;
+}
+
+.formTable a:hover{
+    font-weight: 0;
+    color: lightgreen;
+}
+
+.formTable td:last-child,
+.formTable th:last-child{
+   text-align: right;
+}
+
+.naeke{
+    margin-top: -50px;
+}
+
+
+.kategori a{
+    position: relative;
+}
+
+.threadsatu{
+    padding: 10px 10px 10px 10px;
+    width: 1000px; 
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: left;    
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.threadsatu a{
+    position: relative;
+
+    width: 50px;
+    height: 30px;
+    
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background:  linear-gradient(to right, #ab93ff, #1ba4ff);
+    box-shadow: 3px 4px 7px rgba(27,27,27,0.534);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    padding-right: -20px;
+    border: 2px solid #fff;
+    margin-top: 50px;
+}
+
+
+.balas{
+    margin-top: 230px;
+}
+
+.balas a{
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background:  linear-gradient(to right, #ab93ff, #1ba4ff);
+    box-shadow: 3px 4px 7px rgba(27,27,27,0.534);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.threadtiga{
+    width: 500px ;
+    height: auto;
+    background-color: pink;
+    display: flex;
+    justify-content: left;    
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.threadtiga a{
+    position: relative;
+
+    width: 50px;
+    height: 30px;
+    
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background:  linear-gradient(to right, #ab93ff, #1ba4ff);
+    box-shadow: 3px 4px 7px rgba(27,27,27,0.534);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-right: -20px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+}
